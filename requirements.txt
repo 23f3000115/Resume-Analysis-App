@@ -1,0 +1,10 @@
+flask
+python-multipart
+PyPDF2
+pdfplumber
+spacy
+langchain
+openai
+pandas
+numpy
+python-dotenv

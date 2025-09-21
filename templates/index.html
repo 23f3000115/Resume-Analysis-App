@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume Analysis App</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Resume Analysis App</h1>
+    <p>Upload a PDF resume and get instant analysis, scores, and AI-powered suggestions.</p>
+  </header>
+
+  <section class="uploader">
+    <input type="file" id="fileInput" accept="application/pdf" />
+    <button id="uploadBtn">Upload & Analyze</button>
+  </section>
+
+  <section id="results" class="hidden">
+    <h2>Analysis</h2>
+    <div id="scoreBox"></div>
+    <h3>Extracted Skills</h3>
+    <div id="skills"></div>
+    <h3>Resume Text</h3>
+    <pre id="resumeText"></pre>
+
+    <h3>Generate Professional Summaries</h3>
+    <textarea id="highlights" placeholder="Add 1-2 lines of highlights"></textarea>
+    <button id="genSummaryBtn">Generate Summaries</button>
+    <div id="summaryOptions"></div>
+
+    <h3>Job Title Comparison</h3>
+    <input id="jobTitle" placeholder="e.g., Software Engineer" />
+    <button id="compareBtn">Compare</button>
+    <div id="jobCompareResult"></div>
+  </section>
+
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
